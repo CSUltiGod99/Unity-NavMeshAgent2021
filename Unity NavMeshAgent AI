@@ -13,6 +13,11 @@ public class CharacterMovesAI : MonoBehaviour
    
    void Start()
    {
-     
+     agent = GetComponent<NavMeshAgent>();
+        NavMeshPath path = new NavMeshPath();
+        agent.CalculatePath(target.position, path);
+        if (path.status == NavMeshPathStatus.PathPartial)
+        {
+        }
    }
 }
