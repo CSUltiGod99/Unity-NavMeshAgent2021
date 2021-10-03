@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class CharacterMovesAI : MonoBehaviour
+{
+ // Make sure to have a Navigation tab opened
+ // ... & a NavMesh & Rigidbody attached to the Object you want
+ // to move.
+   public Transform target;
+   private NavMeshAgent agent;
+   
+   void Start()
+   {
+     
+   }
+}
